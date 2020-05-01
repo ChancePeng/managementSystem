@@ -1,0 +1,2 @@
+# managementSystem
+一个公司管理系统的JavaWeb项目，前端UI使用了Bootstrap并实现响应式布局，后端使用Servlet/JSP/JavaMail等技术
