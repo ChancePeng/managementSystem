@@ -1,0 +1,70 @@
+.myNav{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 12;
+}
+.admin_index {
+    background: rgba(200,198,198,0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.admin_index .bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter:opacity(70%);
+    z-index: 1;
+     background:  url("../img/admin_index.jpg") 50% 50% no-repeat;
+}
+.admin_index .admin_main{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.admin_index .admin_main span{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+}
+
+
+
+/*
+响应式布局，适应手机端
+*/
+@media (min-width: 0px) {
+    .admin_index .bg{
+        filter: opacity(70%) ;
+    }
+    .admin_index .admin_main span{
+        font-size: 16px;
+    }
+}
+@media (min-width: 768px) {
+    .admin_index .bg{
+        filter: opacity(70%) ;
+    }
+    .admin_index .admin_main span{
+        font-size: 40px;
+    }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}

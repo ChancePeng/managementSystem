@@ -1,0 +1,102 @@
+.bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    background: url("../img/background_lg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.main{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-size: 100% 100%;
+    top: 0px;
+    overflow: hidden;
+}
+.main ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main .left{
+    float: left;
+    margin-top: 60px;
+}
+.main .left ul li{
+    transition: 0.5s;
+    display: block;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgba(252,252,252,1.00);
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    width: 100%;
+    height: 60px;
+    display: none;
+}
+.main .left ul li.chose{
+    background-color: rgba(0,0,0,1.00);
+    color: #fff;
+}
+.main .left ul li:hover{
+    background-color: rgba(0,0,0,1.00);
+    color: #fff;
+}
+.main .right{
+    border-radius: 15px;
+    padding-left: 30px;
+    float: left;
+    height: 90%;
+    background-color: antiquewhite;
+}
+
+@media (min-width: 0px) {
+    .main .left ul li{
+        height: 30px;
+        line-height: 30px;
+        
+    }
+    .main .right{
+        margin-top: 10px;
+        padding-left: 2px;
+        font-size: 0.3%;
+    }
+    .main .right h3{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+}
+@media (min-width: 768px) { 
+    .main .left ul li{
+         height: 60px;
+        font-size: 12px;
+        line-height: 60px;
+        
+    }
+    .main .right{
+        margin-top: 60px;
+        padding-left: 20px;
+        font-size: 12px;
+    }
+    .main .right h3{
+        font-size: 30px;
+    }
+}
+.main .left ul li.active{
+    display: block;
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+#errorMessage{
+    height: 50px;
+}
+#successMessage{
+    height: 50px;
+}
